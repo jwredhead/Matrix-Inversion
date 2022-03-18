@@ -1,0 +1,1749 @@
+
+*** Running vivado
+    with args -log Overall_MSGR.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Overall_MSGR.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Users/jwredhead/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source Overall_MSGR.tcl -notrace
+WARNING: [Board 49-91] Board repository path '{D:Xilinxivado-boards
+ewoard_files}' does not exist, it will not be used to search board files.
+Command: synth_design -top Overall_MSGR -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12556 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 412.199 ; gain = 98.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Overall_MSGR' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:42]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M00_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:256]
+INFO: [Synth 8-638] synthesizing module '\reg ' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:11]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-256] done synthesizing module '\reg ' (1#1) [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:11]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M10_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:264]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M20_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:272]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M30_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:280]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M11_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:288]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M21_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:296]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M31_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:304]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M41_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:312]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M22_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:320]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M32_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:328]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M42_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:336]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M52_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:344]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M33_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:352]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M43_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:360]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M53_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:368]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'M63_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:376]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM00_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:384]
+INFO: [Synth 8-638] synthesizing module 'reg__parameterized2' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:11]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg__parameterized2' (1#1) [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:11]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM01_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:392]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM02_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:400]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM03_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:408]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM10_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:416]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM11_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:424]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM12_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:432]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM13_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:440]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM20_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:448]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM21_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:456]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM22_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:464]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM23_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:472]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM30_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:480]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM31_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:488]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM32_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:496]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'IM33_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:504]
+INFO: [Synth 8-3491] module 'Counter_6' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/Counter_6_stub.vhdl:5' bound to instance 'SNDIN_COUNTER' of component 'Counter_6' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:512]
+INFO: [Synth 8-638] synthesizing module 'Counter_6' [D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/Counter_6_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Counter_13' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/Counter_13_stub.vhdl:5' bound to instance 'CALC_COUNTER' of component 'Counter_13' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:521]
+INFO: [Synth 8-638] synthesizing module 'Counter_13' [D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/Counter_13_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Counter_6' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/Counter_6_stub.vhdl:5' bound to instance 'TKOUT_COUNTER' of component 'Counter_6' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:530]
+INFO: [Synth 8-3491] module 'MSGR' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:34' bound to instance 'CALC_MSGR' of component 'MSGR' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:539]
+INFO: [Synth 8-638] synthesizing module 'MSGR' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:47]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'X1reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:157]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'X2reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:165]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'X3reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:173]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'X4reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:181]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'X5reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:189]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'X6reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:197]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I1Wreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:205]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I1Yreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:213]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I2Wreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:221]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I2Yreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:229]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I3Wreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:237]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I3Yreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:245]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I4Wreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:253]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I4Yreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:261]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I5Wreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:269]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I5Yreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:277]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I6Wreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:285]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'I6Yreg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:293]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'Out1reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:301]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'Out2reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:309]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'Out3reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:317]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'Out4reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:325]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'In1reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:333]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'In2reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:341]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'In3reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:349]
+	Parameter bits bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'In4reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:357]
+INFO: [Synth 8-3491] module 'boundary_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:34' bound to instance 'B1' of component 'boundary_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'boundary_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:42]
+INFO: [Synth 8-3491] module 'FP_MULT' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_MULT_stub.vhdl:5' bound to instance 'Mult1' of component 'FP_MULT' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'FP_MULT' [D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_MULT_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'FP_MULT' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_MULT_stub.vhdl:5' bound to instance 'Mult2' of component 'FP_MULT' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:110]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'R_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:122]
+	Parameter bits bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'Err_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'reg__parameterized4' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:11]
+	Parameter bits bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg__parameterized4' (1#1) [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:11]
+WARNING: [Synth 8-153] case item 1'bx will never be executed [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:143]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:148]
+WARNING: [Synth 8-3848] Net err_int in module/entity boundary_cell does not have driver. [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'boundary_cell' (2#1) [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:42]
+INFO: [Synth 8-3491] module 'boundary_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:34' bound to instance 'B2' of component 'boundary_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:374]
+INFO: [Synth 8-3491] module 'boundary_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:34' bound to instance 'B3' of component 'boundary_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:383]
+INFO: [Synth 8-3491] module 'boundary_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/boundary_cell.vhd:34' bound to instance 'B4' of component 'boundary_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:392]
+INFO: [Synth 8-3491] module 'internal_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:34' bound to instance 'I1' of component 'internal_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:401]
+INFO: [Synth 8-638] synthesizing module 'internal_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:45]
+INFO: [Synth 8-3491] module 'FP_MULT' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_MULT_stub.vhdl:5' bound to instance 'Mult1' of component 'FP_MULT' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:160]
+INFO: [Synth 8-3491] module 'FP_MULT' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_MULT_stub.vhdl:5' bound to instance 'Mult2' of component 'FP_MULT' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:172]
+INFO: [Synth 8-3491] module 'FP_MULT' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_MULT_stub.vhdl:5' bound to instance 'Mult3' of component 'FP_MULT' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:184]
+INFO: [Synth 8-3491] module 'FP_MULT' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_MULT_stub.vhdl:5' bound to instance 'Mult4' of component 'FP_MULT' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:196]
+INFO: [Synth 8-3491] module 'FP_MULT' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_MULT_stub.vhdl:5' bound to instance 'Mult5' of component 'FP_MULT' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:208]
+INFO: [Synth 8-3491] module 'FP_ADDER' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_ADDER_stub.vhdl:5' bound to instance 'Add1' of component 'FP_ADDER' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'FP_ADDER' [D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_ADDER_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'FP_ADDER' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_ADDER_stub.vhdl:5' bound to instance 'Add2' of component 'FP_ADDER' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:234]
+INFO: [Synth 8-3491] module 'FP_DIVIDE' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_DIVIDE_stub.vhdl:5' bound to instance 'Div1' of component 'FP_DIVIDE' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'FP_DIVIDE' [D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_DIVIDE_stub.vhdl:19]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'C_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:258]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'S_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:266]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'Z_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:274]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'W_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:282]
+	Parameter bits bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'Err_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:290]
+WARNING: [Synth 8-153] case item 1'bx will never be executed [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:310]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:345]
+WARNING: [Synth 8-614] signal 'Yin' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:374]
+WARNING: [Synth 8-614] signal 'Xin' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:374]
+WARNING: [Synth 8-614] signal 'Mult4_Out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:374]
+WARNING: [Synth 8-614] signal 'Add1_Out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:374]
+WARNING: [Synth 8-3848] Net err_int in module/entity internal_cell does not have driver. [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'internal_cell' (3#1) [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:45]
+INFO: [Synth 8-3491] module 'internal_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:34' bound to instance 'I2' of component 'internal_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:413]
+INFO: [Synth 8-3491] module 'internal_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:34' bound to instance 'I3' of component 'internal_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:425]
+INFO: [Synth 8-3491] module 'internal_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:34' bound to instance 'I4' of component 'internal_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:437]
+INFO: [Synth 8-3491] module 'internal_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:34' bound to instance 'I5' of component 'internal_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:449]
+INFO: [Synth 8-3491] module 'internal_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:34' bound to instance 'I6' of component 'internal_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:461]
+INFO: [Synth 8-3491] module 'Counter' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/Counter_stub.vhdl:5' bound to instance 'CTRL_COUNTER' of component 'Counter' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:473]
+INFO: [Synth 8-638] synthesizing module 'Counter' [D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/Counter_stub.vhdl:16]
+	Parameter bits bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'Err_Reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:482]
+WARNING: [Synth 8-153] case item 1'bx will never be executed [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:503]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:505]
+WARNING: [Synth 8-614] signal 'zQ' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:526]
+INFO: [Synth 8-256] done synthesizing module 'MSGR' (4#1) [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/MSGR.vhd:47]
+INFO: [Synth 8-3491] module 'IAM' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/IAM.vhd:34' bound to instance 'CALC_IAM' of component 'IAM' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:553]
+INFO: [Synth 8-638] synthesizing module 'IAM' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/IAM.vhd:47]
+INFO: [Synth 8-3491] module 'bs_boundary_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_boundary_cell.vhd:34' bound to instance 'B1' of component 'bs_boundary_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/IAM.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'bs_boundary_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_boundary_cell.vhd:41]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/reg.vhd:4' bound to instance 'R_reg' of component 'reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_boundary_cell.vhd:96]
+INFO: [Synth 8-3491] module 'FP_MULT' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_MULT_stub.vhdl:5' bound to instance 'Mult' of component 'FP_MULT' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_boundary_cell.vhd:104]
+INFO: [Synth 8-3491] module 'FP_DIVIDE' declared at 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/.Xil/Vivado-6608-Isengard/realtime/FP_DIVIDE_stub.vhdl:5' bound to instance 'Div' of component 'FP_DIVIDE' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_boundary_cell.vhd:116]
+WARNING: [Synth 8-3848] Net go in module/entity bs_boundary_cell does not have driver. [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_boundary_cell.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'bs_boundary_cell' (5#1) [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_boundary_cell.vhd:41]
+INFO: [Synth 8-3491] module 'bs_boundary_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_boundary_cell.vhd:34' bound to instance 'B2' of component 'bs_boundary_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/IAM.vhd:142]
+INFO: [Synth 8-3491] module 'bs_boundary_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_boundary_cell.vhd:34' bound to instance 'B3' of component 'bs_boundary_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/IAM.vhd:148]
+INFO: [Synth 8-3491] module 'bs_boundary_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_boundary_cell.vhd:34' bound to instance 'B4' of component 'bs_boundary_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/IAM.vhd:154]
+INFO: [Synth 8-3491] module 'bs_internal_cell' declared at 'D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_internal_cell.vhd:34' bound to instance 'I1' of component 'bs_internal_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/IAM.vhd:160]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'bs_internal_cell' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_internal_cell.vhd:43]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bs_internal_cell' (6#1) [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/bs_internal_cell.vhd:43]
+	Parameter bits bound to: 33 - type: integer 
+	Parameter bits bound to: 33 - type: integer 
+	Parameter bits bound to: 33 - type: integer 
+	Parameter bits bound to: 33 - type: integer 
+	Parameter bits bound to: 33 - type: integer 
+	Parameter bits bound to: 33 - type: integer 
+	Parameter bits bound to: 32 - type: integer 
+	Parameter bits bound to: 32 - type: integer 
+	Parameter bits bound to: 32 - type: integer 
+	Parameter bits bound to: 32 - type: integer 
+	Parameter bits bound to: 32 - type: integer 
+	Parameter bits bound to: 32 - type: integer 
+	Parameter bits bound to: 32 - type: integer 
+	Parameter bits bound to: 32 - type: integer 
+	Parameter bits bound to: 32 - type: integer 
+	Parameter bits bound to: 32 - type: integer 
+	Parameter bits bound to: 33 - type: integer 
+	Parameter bits bound to: 33 - type: integer 
+	Parameter bits bound to: 33 - type: integer 
+	Parameter bits bound to: 33 - type: integer 
+	Parameter bits bound to: 1 - type: integer 
+WARNING: [Synth 8-153] case item 1'bx will never be executed [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/IAM.vhd:398]
+WARNING: [Synth 8-614] signal 'zQ' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/IAM.vhd:415]
+INFO: [Synth 8-256] done synthesizing module 'IAM' (7#1) [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/IAM.vhd:47]
+WARNING: [Synth 8-614] signal 'Input' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'matrix' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM00_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM01_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM02_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM03_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM10_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM11_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM12_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM13_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM20_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM21_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM22_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM23_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM30_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM31_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM32_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+WARNING: [Synth 8-614] signal 'IM33_reg_out' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:709]
+INFO: [Synth 8-256] done synthesizing module 'Overall_MSGR' (8#1) [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 475.223 ; gain = 161.063
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 475.223 ; gain = 161.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 475.223 ; gain = 161.063
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/Counter/Counter/Counter_in_context.xdc] for cell 'CALC_MSGR/CTRL_COUNTER'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/Counter/Counter/Counter_in_context.xdc] for cell 'CALC_MSGR/CTRL_COUNTER'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/Counter/Counter/Counter_in_context.xdc] for cell 'CALC_IAM/CTRL_COUNTER'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/Counter/Counter/Counter_in_context.xdc] for cell 'CALC_IAM/CTRL_COUNTER'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I1/Add1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I1/Add1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I1/Add2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I1/Add2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I2/Add1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I2/Add1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I2/Add2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I2/Add2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I3/Add1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I3/Add1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I3/Add2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I3/Add2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I4/Add1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I4/Add1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I4/Add2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I4/Add2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I5/Add1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I5/Add1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I5/Add2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I5/Add2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I6/Add1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I6/Add1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I6/Add2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_MSGR/I6/Add2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I1/Add'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I1/Add'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I2/Add'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I2/Add'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I3/Add'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I3/Add'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I4/Add'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I4/Add'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I5/Add'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I5/Add'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I6/Add'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_ADDER/FP_ADDER/FP_ADDER_in_context.xdc] for cell 'CALC_IAM/I6/Add'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B1/Mult1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B1/Mult1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B1/Mult2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B1/Mult2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B2/Mult1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B2/Mult1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B2/Mult2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B2/Mult2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B3/Mult1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B3/Mult1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B3/Mult2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B3/Mult2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B4/Mult1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B4/Mult1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B4/Mult2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/B4/Mult2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I1/Mult1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I1/Mult1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I1/Mult2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I1/Mult2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I1/Mult3'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I1/Mult3'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I1/Mult4'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I1/Mult4'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I1/Mult5'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I1/Mult5'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I2/Mult1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I2/Mult1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I2/Mult2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I2/Mult2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I2/Mult3'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I2/Mult3'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I2/Mult4'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I2/Mult4'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I2/Mult5'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I2/Mult5'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I3/Mult1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I3/Mult1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I3/Mult2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I3/Mult2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I3/Mult3'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I3/Mult3'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I3/Mult4'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I3/Mult4'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I3/Mult5'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I3/Mult5'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I4/Mult1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I4/Mult1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I4/Mult2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I4/Mult2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I4/Mult3'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I4/Mult3'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I4/Mult4'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I4/Mult4'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I4/Mult5'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I4/Mult5'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I5/Mult1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I5/Mult1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I5/Mult2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I5/Mult2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I5/Mult3'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I5/Mult3'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I5/Mult4'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I5/Mult4'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I5/Mult5'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I5/Mult5'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I6/Mult1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I6/Mult1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I6/Mult2'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I6/Mult2'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I6/Mult3'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I6/Mult3'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I6/Mult4'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I6/Mult4'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I6/Mult5'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_MSGR/I6/Mult5'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/B1/Mult'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/B1/Mult'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/B2/Mult'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/B2/Mult'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/B3/Mult'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/B3/Mult'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/B4/Mult'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/B4/Mult'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I1/Mult'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I1/Mult'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I2/Mult'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I2/Mult'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I3/Mult'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I3/Mult'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I4/Mult'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I4/Mult'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I5/Mult'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I5/Mult'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I6/Mult'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_MULT/FP_MULT/FP_MULT_in_context.xdc] for cell 'CALC_IAM/I6/Mult'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/Counter_6/Counter_6/COUNTER_6_in_context.xdc] for cell 'SNDIN_COUNTER'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/Counter_6/Counter_6/COUNTER_6_in_context.xdc] for cell 'SNDIN_COUNTER'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/Counter_6/Counter_6/COUNTER_6_in_context.xdc] for cell 'TKOUT_COUNTER'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/Counter_6/Counter_6/COUNTER_6_in_context.xdc] for cell 'TKOUT_COUNTER'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/Counter_13/Counter_13/Counter_11_in_context.xdc] for cell 'CALC_COUNTER'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/Counter_13/Counter_13/Counter_11_in_context.xdc] for cell 'CALC_COUNTER'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I1/Div1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I1/Div1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I2/Div1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I2/Div1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I3/Div1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I3/Div1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I4/Div1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I4/Div1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I5/Div1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I5/Div1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I6/Div1'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_MSGR/I6/Div1'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/B1/Div'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/B1/Div'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/B2/Div'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/B2/Div'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/B3/Div'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/B3/Div'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/B4/Div'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/B4/Div'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I1/Div'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I1/Div'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I2/Div'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I2/Div'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I3/Div'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I3/Div'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I4/Div'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I4/Div'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I5/Div'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I5/Div'
+Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I6/Div'
+Finished Parsing XDC File [d:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/ip/FP_DIVIDE/FP_DIVIDE/FP_DIVIDE_in_context.xdc] for cell 'CALC_IAM/I6/Div'
+Parsing XDC File [D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 848.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 848.125 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 848.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 848.125 ; gain = 533.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 848.125 ; gain = 533.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for CALC_MSGR/CTRL_COUNTER. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/CTRL_COUNTER. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I1/Add. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I2/Add. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I3/Add. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I4/Add. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I5/Add. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I6/Add. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I1/Add1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I2/Add1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I3/Add1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I4/Add1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I5/Add1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I6/Add1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I1/Add2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I2/Add2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I3/Add2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I4/Add2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I5/Add2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I6/Add2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/B1/Mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/B2/Mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/B3/Mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/B4/Mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I1/Mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I2/Mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I3/Mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I4/Mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I5/Mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I6/Mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/B1/Mult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/B2/Mult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/B3/Mult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/B4/Mult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I1/Mult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I2/Mult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I3/Mult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I4/Mult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I5/Mult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I6/Mult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/B1/Mult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/B2/Mult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/B3/Mult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/B4/Mult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I1/Mult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I2/Mult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I3/Mult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I4/Mult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I5/Mult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I6/Mult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I1/Mult3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I2/Mult3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I3/Mult3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I4/Mult3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I5/Mult3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I6/Mult3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I1/Mult4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I2/Mult4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I3/Mult4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I4/Mult4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I5/Mult4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I6/Mult4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I1/Mult5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I2/Mult5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I3/Mult5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I4/Mult5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I5/Mult5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I6/Mult5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SNDIN_COUNTER. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TKOUT_COUNTER. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_COUNTER. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/B1/Div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/B2/Div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/B3/Div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/B4/Div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I1/Div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I2/Div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I3/Div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I4/Div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I5/Div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_IAM/I6/Div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I1/Div1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I2/Div1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I3/Div1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I4/Div1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I5/Div1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CALC_MSGR/I6/Div1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 848.125 ; gain = 533.965
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'boundary_cell__xdcDup__1'
+INFO: [Synth 8-5545] ROM "reg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'boundary_cell__xdcDup__2'
+INFO: [Synth 8-5545] ROM "reg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'boundary_cell__xdcDup__3'
+INFO: [Synth 8-5545] ROM "reg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'boundary_cell'
+INFO: [Synth 8-5545] ROM "reg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'Sreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:270]
+INFO: [Synth 8-4471] merging register 'Zreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:278]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'internal_cell__xdcDup__1'
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Creg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Sreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Zreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mult4_In1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "Creg_in" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Mult1_In1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'Sreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:270]
+INFO: [Synth 8-4471] merging register 'Zreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:278]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'internal_cell__xdcDup__2'
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Creg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Sreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Zreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mult4_In1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "Creg_in" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Mult1_In1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'Sreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:270]
+INFO: [Synth 8-4471] merging register 'Zreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:278]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'internal_cell__xdcDup__3'
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Creg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Sreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Zreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mult4_In1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "Creg_in" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Mult1_In1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'Sreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:270]
+INFO: [Synth 8-4471] merging register 'Zreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:278]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'internal_cell__xdcDup__4'
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Creg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Sreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Zreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mult4_In1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "Creg_in" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Mult1_In1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'Sreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:270]
+INFO: [Synth 8-4471] merging register 'Zreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:278]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'internal_cell__xdcDup__5'
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Creg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Sreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Zreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mult4_In1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "Creg_in" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Mult1_In1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'Sreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:270]
+INFO: [Synth 8-4471] merging register 'Zreg_en_reg' into 'Creg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:278]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'internal_cell'
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Creg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Sreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Zreg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mult4_In1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "Creg_in" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Mult1_In1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MSGR'
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Overall_MSGR'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                        000000001 |                             0000
+                      s1 |                        000000010 |                             0001
+                      s2 |                        000000100 |                             0010
+                      s3 |                        000001000 |                             0011
+                      s4 |                        000010000 |                             0100
+                      s5 |                        000100000 |                             0101
+                      s6 |                        001000000 |                             0110
+                      s7 |                        010000000 |                             0111
+                      s8 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'boundary_cell__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                        000000001 |                             0000
+                      s1 |                        000000010 |                             0001
+                      s2 |                        000000100 |                             0010
+                      s3 |                        000001000 |                             0011
+                      s4 |                        000010000 |                             0100
+                      s5 |                        000100000 |                             0101
+                      s6 |                        001000000 |                             0110
+                      s7 |                        010000000 |                             0111
+                      s8 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'boundary_cell__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                        000000001 |                             0000
+                      s1 |                        000000010 |                             0001
+                      s2 |                        000000100 |                             0010
+                      s3 |                        000001000 |                             0011
+                      s4 |                        000010000 |                             0100
+                      s5 |                        000100000 |                             0101
+                      s6 |                        001000000 |                             0110
+                      s7 |                        010000000 |                             0111
+                      s8 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'boundary_cell__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                        000000001 |                             0000
+                      s1 |                        000000010 |                             0001
+                      s2 |                        000000100 |                             0010
+                      s3 |                        000001000 |                             0011
+                      s4 |                        000010000 |                             0100
+                      s5 |                        000100000 |                             0101
+                      s6 |                        001000000 |                             0110
+                      s7 |                        010000000 |                             0111
+                      s8 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'boundary_cell'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                        000000001 |                             0000
+                      s1 |                        000000010 |                             0001
+                      s2 |                        000000100 |                             0010
+                      s3 |                        000001000 |                             0011
+                      s4 |                        000010000 |                             0100
+                      s5 |                        000100000 |                             0101
+                      s6 |                        001000000 |                             0110
+                      s7 |                        010000000 |                             0111
+                      s8 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'internal_cell__xdcDup__1'
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In1_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:250]
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In2_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:252]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                        000000001 |                             0000
+                      s1 |                        000000010 |                             0001
+                      s2 |                        000000100 |                             0010
+                      s3 |                        000001000 |                             0011
+                      s4 |                        000010000 |                             0100
+                      s5 |                        000100000 |                             0101
+                      s6 |                        001000000 |                             0110
+                      s7 |                        010000000 |                             0111
+                      s8 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'internal_cell__xdcDup__2'
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In1_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:250]
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In2_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:252]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                        000000001 |                             0000
+                      s1 |                        000000010 |                             0001
+                      s2 |                        000000100 |                             0010
+                      s3 |                        000001000 |                             0011
+                      s4 |                        000010000 |                             0100
+                      s5 |                        000100000 |                             0101
+                      s6 |                        001000000 |                             0110
+                      s7 |                        010000000 |                             0111
+                      s8 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'internal_cell__xdcDup__3'
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In1_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:250]
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In2_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:252]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                        000000001 |                             0000
+                      s1 |                        000000010 |                             0001
+                      s2 |                        000000100 |                             0010
+                      s3 |                        000001000 |                             0011
+                      s4 |                        000010000 |                             0100
+                      s5 |                        000100000 |                             0101
+                      s6 |                        001000000 |                             0110
+                      s7 |                        010000000 |                             0111
+                      s8 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'internal_cell__xdcDup__4'
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In1_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:250]
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In2_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:252]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                        000000001 |                             0000
+                      s1 |                        000000010 |                             0001
+                      s2 |                        000000100 |                             0010
+                      s3 |                        000001000 |                             0011
+                      s4 |                        000010000 |                             0100
+                      s5 |                        000100000 |                             0101
+                      s6 |                        001000000 |                             0110
+                      s7 |                        010000000 |                             0111
+                      s8 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'internal_cell__xdcDup__5'
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In1_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:250]
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In2_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:252]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                        000000001 |                             0000
+                      s1 |                        000000010 |                             0001
+                      s2 |                        000000100 |                             0010
+                      s3 |                        000001000 |                             0011
+                      s4 |                        000010000 |                             0100
+                      s5 |                        000100000 |                             0101
+                      s6 |                        001000000 |                             0110
+                      s7 |                        010000000 |                             0111
+                      s8 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'internal_cell'
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In1_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:250]
+WARNING: [Synth 8-327] inferring latch for variable 'Div1_In2_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/internal_cell.vhd:252]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                               00 |                               00
+                    load |                               01 |                               01
+                   calc1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'MSGR'
+WARNING: [Synth 8-327] inferring latch for variable 'Output_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:712]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                           000000 |                           000000
+                   tkin1 |                           000001 |                           000001
+                   tkin2 |                           000010 |                           000010
+                   tkin3 |                           000011 |                           000011
+                   tkin4 |                           000100 |                           000100
+                   tkin5 |                           000101 |                           000101
+                   tkin6 |                           000110 |                           000110
+                   tkin7 |                           000111 |                           000111
+                   tkin8 |                           001000 |                           001000
+                   tkin9 |                           001001 |                           001001
+                  tkin10 |                           001010 |                           001010
+                  tkin11 |                           001011 |                           001011
+                  tkin12 |                           001100 |                           001100
+                  tkin13 |                           001101 |                           001101
+                  tkin14 |                           001110 |                           001110
+                  tkin15 |                           001111 |                           001111
+                  tkin16 |                           010000 |                           010000
+                  sndin1 |                           010001 |                           010001
+                  sndin2 |                           010010 |                           010010
+                  sndin3 |                           010011 |                           010011
+                  sndin4 |                           010100 |                           010100
+                  sndin5 |                           010101 |                           010101
+                  sndin6 |                           010110 |                           010110
+                  sndin7 |                           010111 |                           010111
+                  sndin8 |                           011000 |                           011000
+                  sndin9 |                           011001 |                           011001
+                 sndin10 |                           011010 |                           011010
+                 sndin11 |                           011011 |                           011011
+                    calc |                           011100 |                           011100
+                  tkout1 |                           011101 |                           011101
+                  tkout2 |                           011110 |                           011110
+                  tkout3 |                           011111 |                           011111
+                  tkout4 |                           100000 |                           100000
+                  tkout5 |                           100001 |                           100001
+                  tkout6 |                           100010 |                           100010
+                  tkout7 |                           100011 |                           100011
+                 sndout1 |                           100100 |                           100100
+                 sndout2 |                           100101 |                           100101
+                 sndout3 |                           100110 |                           100110
+                 sndout4 |                           100111 |                           100111
+                 sndout5 |                           101000 |                           101000
+                 sndout6 |                           101001 |                           101001
+                 sndout7 |                           101010 |                           101010
+                 sndout8 |                           101011 |                           101011
+                 sndout9 |                           101100 |                           101100
+                sndout10 |                           101101 |                           101101
+                sndout11 |                           101110 |                           101110
+                sndout12 |                           101111 |                           101111
+                sndout13 |                           110000 |                           110000
+                sndout14 |                           110001 |                           110001
+                sndout15 |                           110010 |                           110010
+                sndout16 |                           110011 |                           110011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Overall_MSGR'
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:712]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:541]
+WARNING: [Synth 8-327] inferring latch for variable 'sndin_count_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:515]
+WARNING: [Synth 8-327] inferring latch for variable 'in1_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:543]
+WARNING: [Synth 8-327] inferring latch for variable 'in2_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:544]
+WARNING: [Synth 8-327] inferring latch for variable 'in3_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:545]
+WARNING: [Synth 8-327] inferring latch for variable 'in4_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:546]
+WARNING: [Synth 8-327] inferring latch for variable 'calc_count_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:524]
+WARNING: [Synth 8-327] inferring latch for variable 'tkout_count_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:533]
+WARNING: [Synth 8-327] inferring latch for variable 'matrix_reg_en_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:260]
+WARNING: [Synth 8-327] inferring latch for variable 'M00_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'M10_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:269]
+WARNING: [Synth 8-327] inferring latch for variable 'M20_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:277]
+WARNING: [Synth 8-327] inferring latch for variable 'M30_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:285]
+WARNING: [Synth 8-327] inferring latch for variable 'M11_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:293]
+WARNING: [Synth 8-327] inferring latch for variable 'M21_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:301]
+WARNING: [Synth 8-327] inferring latch for variable 'M31_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:309]
+WARNING: [Synth 8-327] inferring latch for variable 'M41_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:317]
+WARNING: [Synth 8-327] inferring latch for variable 'M22_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:325]
+WARNING: [Synth 8-327] inferring latch for variable 'M32_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:333]
+WARNING: [Synth 8-327] inferring latch for variable 'M42_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:341]
+WARNING: [Synth 8-327] inferring latch for variable 'M52_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:349]
+WARNING: [Synth 8-327] inferring latch for variable 'M33_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:357]
+WARNING: [Synth 8-327] inferring latch for variable 'M43_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:365]
+WARNING: [Synth 8-327] inferring latch for variable 'M53_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:373]
+WARNING: [Synth 8-327] inferring latch for variable 'M63_reg_in_reg' [D:/Vivado_Projects/MSGR/MSGR.srcs/sources_1/new/Overall_MSGR.vhd:381]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 848.125 ; gain = 533.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 52    
+	               32 Bit    Registers := 134   
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 38    
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 6     
+	  52 Input     33 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 94    
+	   3 Input     32 Bit        Muxes := 6     
+	   9 Input     32 Bit        Muxes := 12    
+	  52 Input     32 Bit        Muxes := 1     
+	  52 Input     16 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 20    
+	   9 Input      8 Bit        Muxes := 6     
+	  52 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 20    
+	   2 Input      3 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 22    
+	   3 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 27    
+	  11 Input      1 Bit        Muxes := 2     
+	  52 Input      1 Bit        Muxes := 41    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Overall_MSGR 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  52 Input     33 Bit        Muxes := 4     
+	  52 Input     32 Bit        Muxes := 1     
+	  52 Input     16 Bit        Muxes := 2     
+	  52 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 20    
+	  52 Input      1 Bit        Muxes := 41    
+Module reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
+Module reg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module reg__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module boundary_cell__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module boundary_cell__xdcDup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module boundary_cell__xdcDup__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module boundary_cell 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module internal_cell__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 11    
+	   3 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module internal_cell__xdcDup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 11    
+	   3 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module internal_cell__xdcDup__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 11    
+	   3 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module internal_cell__xdcDup__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 11    
+	   3 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module internal_cell__xdcDup__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 11    
+	   3 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module internal_cell 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 11    
+	   3 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module MSGR 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+Module bs_boundary_cell__xdcDup__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module bs_boundary_cell__xdcDup__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module bs_boundary_cell__xdcDup__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module bs_boundary_cell 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module bs_internal_cell__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bs_internal_cell__xdcDup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bs_internal_cell__xdcDup__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bs_internal_cell__xdcDup__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bs_internal_cell__xdcDup__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bs_internal_cell 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module IAM 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "reg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg_in" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "err_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\M63_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M53_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M43_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M33_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M52_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\M42_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M32_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M22_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M41_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M31_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\M21_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M11_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M30_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M20_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M10_reg_in_reg[32] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\M00_reg_in_reg[32] )
+INFO: [Synth 8-3886] merging instance 'inv_matrix_reg_en_reg[14]' (FDE) to 'inv_matrix_reg_en_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inv_matrix_reg_en_reg[13]' (FDE) to 'inv_matrix_reg_en_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inv_matrix_reg_en_reg[12]' (FDE) to 'inv_matrix_reg_en_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inv_matrix_reg_en_reg[3]' (FDE) to 'inv_matrix_reg_en_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inv_matrix_reg_en_reg[2]' (FDE) to 'inv_matrix_reg_en_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inv_matrix_reg_en_reg[1]' (FDE) to 'inv_matrix_reg_en_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inv_matrix_reg_en_reg[10]' (FDE) to 'inv_matrix_reg_en_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inv_matrix_reg_en_reg[9]' (FDE) to 'inv_matrix_reg_en_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inv_matrix_reg_en_reg[8]' (FDE) to 'inv_matrix_reg_en_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (CALC_MSGR/\B2/Err_Reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (CALC_MSGR/\B1/Err_Reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (CALC_MSGR/\I1/Err_Reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (CALC_MSGR/\B4/Err_Reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (CALC_MSGR/\B3/Err_Reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (CALC_MSGR/\I5/Err_Reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (CALC_MSGR/\I6/Err_Reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (CALC_MSGR/\I4/Err_Reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (CALC_MSGR/\I3/Err_Reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (CALC_MSGR/\I2/Err_Reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (CALC_IAM/\Err_Reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M30_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M20_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M10_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\M00_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M41_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M31_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\M21_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M11_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M52_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\M42_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M32_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M22_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\M63_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M53_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M43_Reg/Q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M33_Reg/Q_reg[32] )
+WARNING: [Synth 8-3332] Sequential element (M00_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M10_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M20_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M30_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M11_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M21_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M31_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M41_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M22_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M32_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M42_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M52_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M33_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M43_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M53_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+WARNING: [Synth 8-3332] Sequential element (M63_reg_in_reg[32]) is unused and will be removed from module Overall_MSGR.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 848.125 ; gain = 533.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+------------+---------------+----------------+
+|Module Name  | RTL Object | Depth x Width | Implemented As | 
++-------------+------------+---------------+----------------+
+|Overall_MSGR | O700       | 64x16         | LUT            | 
++-------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 854.164 ; gain = 540.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 862.070 ; gain = 547.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 894.141 ; gain = 579.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 894.141 ; gain = 579.980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 894.141 ; gain = 579.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 894.141 ; gain = 579.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 894.141 ; gain = 579.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 894.141 ; gain = 579.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 894.141 ; gain = 579.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Overall_MSGR | CALC_MSGR/B1/FSM_onehot_state_reg[5] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Overall_MSGR | CALC_MSGR/B2/FSM_onehot_state_reg[5] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Overall_MSGR | CALC_MSGR/B3/FSM_onehot_state_reg[5] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Overall_MSGR | CALC_MSGR/B4/FSM_onehot_state_reg[5] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++-------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Counter_6     |         2|
+|2     |Counter_13    |         1|
+|3     |Counter       |         2|
+|4     |FP_MULT       |        48|
+|5     |FP_DIVIDE     |        16|
+|6     |FP_ADDER      |        18|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |Counter_13_bbox_15    |     1|
+|2     |Counter_6_bbox_14     |     1|
+|3     |Counter_6_bbox_16     |     1|
+|4     |Counter_bbox_27       |     1|
+|5     |Counter_bbox_33       |     1|
+|6     |FP_ADDER_bbox_24      |     1|
+|7     |FP_ADDER_bbox_24__10  |     1|
+|8     |FP_ADDER_bbox_24__6   |     1|
+|9     |FP_ADDER_bbox_24__7   |     1|
+|10    |FP_ADDER_bbox_24__8   |     1|
+|11    |FP_ADDER_bbox_24__9   |     1|
+|12    |FP_ADDER_bbox_25      |     1|
+|13    |FP_ADDER_bbox_25__10  |     1|
+|14    |FP_ADDER_bbox_25__6   |     1|
+|15    |FP_ADDER_bbox_25__7   |     1|
+|16    |FP_ADDER_bbox_25__8   |     1|
+|17    |FP_ADDER_bbox_25__9   |     1|
+|18    |FP_ADDER_bbox_32      |     1|
+|19    |FP_ADDER_bbox_32__10  |     1|
+|20    |FP_ADDER_bbox_32__6   |     1|
+|21    |FP_ADDER_bbox_32__7   |     1|
+|22    |FP_ADDER_bbox_32__8   |     1|
+|23    |FP_ADDER_bbox_32__9   |     1|
+|24    |FP_DIVIDE_bbox_26     |     1|
+|25    |FP_DIVIDE_bbox_26__10 |     1|
+|26    |FP_DIVIDE_bbox_26__6  |     1|
+|27    |FP_DIVIDE_bbox_26__7  |     1|
+|28    |FP_DIVIDE_bbox_26__8  |     1|
+|29    |FP_DIVIDE_bbox_26__9  |     1|
+|30    |FP_DIVIDE_bbox_29     |     1|
+|31    |FP_DIVIDE_bbox_29__4  |     1|
+|32    |FP_DIVIDE_bbox_29__5  |     1|
+|33    |FP_DIVIDE_bbox_29__6  |     1|
+|34    |FP_DIVIDE_bbox_31     |     1|
+|35    |FP_DIVIDE_bbox_31__10 |     1|
+|36    |FP_DIVIDE_bbox_31__6  |     1|
+|37    |FP_DIVIDE_bbox_31__7  |     1|
+|38    |FP_DIVIDE_bbox_31__8  |     1|
+|39    |FP_DIVIDE_bbox_31__9  |     1|
+|40    |FP_MULT_bbox_17       |     1|
+|41    |FP_MULT_bbox_17__4    |     1|
+|42    |FP_MULT_bbox_17__5    |     1|
+|43    |FP_MULT_bbox_17__6    |     1|
+|44    |FP_MULT_bbox_18       |     1|
+|45    |FP_MULT_bbox_18__4    |     1|
+|46    |FP_MULT_bbox_18__5    |     1|
+|47    |FP_MULT_bbox_18__6    |     1|
+|48    |FP_MULT_bbox_19       |     1|
+|49    |FP_MULT_bbox_19__10   |     1|
+|50    |FP_MULT_bbox_19__6    |     1|
+|51    |FP_MULT_bbox_19__7    |     1|
+|52    |FP_MULT_bbox_19__8    |     1|
+|53    |FP_MULT_bbox_19__9    |     1|
+|54    |FP_MULT_bbox_20       |     1|
+|55    |FP_MULT_bbox_20__10   |     1|
+|56    |FP_MULT_bbox_20__6    |     1|
+|57    |FP_MULT_bbox_20__7    |     1|
+|58    |FP_MULT_bbox_20__8    |     1|
+|59    |FP_MULT_bbox_20__9    |     1|
+|60    |FP_MULT_bbox_21       |     1|
+|61    |FP_MULT_bbox_21__10   |     1|
+|62    |FP_MULT_bbox_21__6    |     1|
+|63    |FP_MULT_bbox_21__7    |     1|
+|64    |FP_MULT_bbox_21__8    |     1|
+|65    |FP_MULT_bbox_21__9    |     1|
+|66    |FP_MULT_bbox_22       |     1|
+|67    |FP_MULT_bbox_22__10   |     1|
+|68    |FP_MULT_bbox_22__6    |     1|
+|69    |FP_MULT_bbox_22__7    |     1|
+|70    |FP_MULT_bbox_22__8    |     1|
+|71    |FP_MULT_bbox_22__9    |     1|
+|72    |FP_MULT_bbox_23       |     1|
+|73    |FP_MULT_bbox_23__10   |     1|
+|74    |FP_MULT_bbox_23__6    |     1|
+|75    |FP_MULT_bbox_23__7    |     1|
+|76    |FP_MULT_bbox_23__8    |     1|
+|77    |FP_MULT_bbox_23__9    |     1|
+|78    |FP_MULT_bbox_28       |     1|
+|79    |FP_MULT_bbox_28__4    |     1|
+|80    |FP_MULT_bbox_28__5    |     1|
+|81    |FP_MULT_bbox_28__6    |     1|
+|82    |FP_MULT_bbox_30       |     1|
+|83    |FP_MULT_bbox_30__10   |     1|
+|84    |FP_MULT_bbox_30__6    |     1|
+|85    |FP_MULT_bbox_30__7    |     1|
+|86    |FP_MULT_bbox_30__8    |     1|
+|87    |FP_MULT_bbox_30__9    |     1|
+|88    |BUFG                  |    12|
+|89    |LUT1                  |    26|
+|90    |LUT2                  |   189|
+|91    |LUT3                  |   772|
+|92    |LUT4                  |   638|
+|93    |LUT5                  |   158|
+|94    |LUT6                  |   731|
+|95    |MUXF7                 |     1|
+|96    |SRL16E                |     4|
+|97    |FDCE                  |    73|
+|98    |FDPE                  |    10|
+|99    |FDRE                  |  5364|
+|100   |FDSE                  |   147|
+|101   |LD                    |  1081|
+|102   |IBUF                  |    34|
+|103   |OBUF                  |    34|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+------------+----------------------------+------+
+|      |Instance    |Module                      |Cells |
++------+------------+----------------------------+------+
+|1     |top         |                            | 12085|
+|2     |  CALC_IAM  |IAM                         |  2083|
+|3     |    B1      |bs_boundary_cell__xdcDup__1 |   100|
+|4     |      R_reg |reg__parameterized2_113     |    32|
+|5     |    B2      |bs_boundary_cell__xdcDup__2 |   100|
+|6     |      R_reg |reg__parameterized2_112     |    32|
+|7     |    B3      |bs_boundary_cell__xdcDup__3 |   100|
+|8     |      R_reg |reg__parameterized2_111     |    32|
+|9     |    B4      |bs_boundary_cell            |   100|
+|10    |      R_reg |reg__parameterized2_110     |    32|
+|11    |    I1      |bs_internal_cell__xdcDup__1 |   169|
+|12    |      R_reg |reg__parameterized2_109     |    32|
+|13    |    I2      |bs_internal_cell__xdcDup__2 |   169|
+|14    |      R_reg |reg__parameterized2_108     |    32|
+|15    |    I3      |bs_internal_cell__xdcDup__3 |   169|
+|16    |      R_reg |reg__parameterized2_107     |    32|
+|17    |    I4      |bs_internal_cell__xdcDup__4 |   169|
+|18    |      R_reg |reg__parameterized2_106     |    32|
+|19    |    I5      |bs_internal_cell__xdcDup__5 |   169|
+|20    |      R_reg |reg__parameterized2_105     |    32|
+|21    |    I6      |bs_internal_cell            |   169|
+|22    |      R_reg |reg__parameterized2_104     |    32|
+|23    |    In1reg  |reg_84                      |    34|
+|24    |    In2reg  |reg_85                      |    34|
+|25    |    In3reg  |reg_86                      |    34|
+|26    |    In4reg  |reg_87                      |    34|
+|27    |    Out1reg |reg__parameterized2_88      |    32|
+|28    |    Out2reg |reg__parameterized2_89      |    32|
+|29    |    Out3reg |reg__parameterized2_90      |    32|
+|30    |    Out4reg |reg__parameterized2_91      |    32|
+|31    |    X1reg   |reg_92                      |    34|
+|32    |    X2reg   |reg_93                      |    34|
+|33    |    X3reg   |reg_94                      |    34|
+|34    |    X4reg   |reg_95                      |    34|
+|35    |    X5reg   |reg_96                      |    34|
+|36    |    X6reg   |reg_97                      |    35|
+|37    |    Y1reg   |reg__parameterized2_98      |    32|
+|38    |    Y2reg   |reg__parameterized2_99      |    32|
+|39    |    Y3reg   |reg__parameterized2_100     |    32|
+|40    |    Y4reg   |reg__parameterized2_101     |    32|
+|41    |    Y5reg   |reg__parameterized2_102     |    32|
+|42    |    Y6reg   |reg__parameterized2_103     |    32|
+|43    |  CALC_MSGR |MSGR                        |  7101|
+|44    |    I1Wreg  |reg__parameterized2_30      |    32|
+|45    |    B1      |boundary_cell__xdcDup__1    |   118|
+|46    |      R_Reg |reg__parameterized2_83      |    33|
+|47    |    B2      |boundary_cell__xdcDup__2    |   115|
+|48    |      R_Reg |reg__parameterized2_82      |    33|
+|49    |    B3      |boundary_cell__xdcDup__3    |   115|
+|50    |      R_Reg |reg__parameterized2_81      |    33|
+|51    |    B4      |boundary_cell               |   115|
+|52    |      R_Reg |reg__parameterized2_80      |    33|
+|53    |    I1      |internal_cell__xdcDup__1    |   749|
+|54    |      C_Reg |reg__parameterized2_76      |    32|
+|55    |      S_Reg |reg__parameterized2_77      |    39|
+|56    |      W_Reg |reg__parameterized2_78      |    32|
+|57    |      Z_Reg |reg__parameterized2_79      |    14|
+|58    |    I1Yreg  |reg_31                      |    80|
+|59    |    I2      |internal_cell__xdcDup__2    |   750|
+|60    |      C_Reg |reg__parameterized2_72      |    32|
+|61    |      S_Reg |reg__parameterized2_73      |    39|
+|62    |      W_Reg |reg__parameterized2_74      |    32|
+|63    |      Z_Reg |reg__parameterized2_75      |    14|
+|64    |    I2Wreg  |reg__parameterized2_32      |    39|
+|65    |    I2Yreg  |reg_33                      |    75|
+|66    |    I3      |internal_cell__xdcDup__3    |   749|
+|67    |      C_Reg |reg__parameterized2_68      |    32|
+|68    |      S_Reg |reg__parameterized2_69      |    39|
+|69    |      W_Reg |reg__parameterized2_70      |    32|
+|70    |      Z_Reg |reg__parameterized2_71      |    14|
+|71    |    I3Wreg  |reg__parameterized2_34      |    39|
+|72    |    I3Yreg  |reg_35                      |    75|
+|73    |    I4      |internal_cell__xdcDup__4    |   774|
+|74    |      C_Reg |reg__parameterized2_64      |    32|
+|75    |      S_Reg |reg__parameterized2_65      |    39|
+|76    |      W_Reg |reg__parameterized2_66      |    32|
+|77    |      Z_Reg |reg__parameterized2_67      |    14|
+|78    |    I4Wreg  |reg__parameterized2_36      |    32|
+|79    |    I4Yreg  |reg_37                      |    80|
+|80    |    I5      |internal_cell__xdcDup__5    |   774|
+|81    |      C_Reg |reg__parameterized2_60      |    32|
+|82    |      S_Reg |reg__parameterized2_61      |    39|
+|83    |      W_Reg |reg__parameterized2_62      |    32|
+|84    |      Z_Reg |reg__parameterized2_63      |    14|
+|85    |    I5Wreg  |reg__parameterized2_38      |    39|
+|86    |    I5Yreg  |reg_39                      |    75|
+|87    |    I6      |internal_cell               |   774|
+|88    |      C_Reg |reg__parameterized2_56      |    32|
+|89    |      S_Reg |reg__parameterized2_57      |    39|
+|90    |      W_Reg |reg__parameterized2_58      |    32|
+|91    |      Z_Reg |reg__parameterized2_59      |    14|
+|92    |    I6Wreg  |reg__parameterized2_40      |    32|
+|93    |    I6Yreg  |reg_41                      |    80|
+|94    |    In1reg  |reg_42                      |    80|
+|95    |    In2reg  |reg_43                      |    75|
+|96    |    In3reg  |reg_44                      |    75|
+|97    |    In4reg  |reg_45                      |    76|
+|98    |    Out1reg |reg_46                      |    33|
+|99    |    Out2reg |reg_47                      |    33|
+|100   |    Out3reg |reg_48                      |    33|
+|101   |    Out4reg |reg_49                      |    33|
+|102   |    X1reg   |reg_50                      |   145|
+|103   |    X2reg   |reg_51                      |   145|
+|104   |    X3reg   |reg_52                      |   145|
+|105   |    X4reg   |reg_53                      |   169|
+|106   |    X5reg   |reg_54                      |   169|
+|107   |    X6reg   |reg_55                      |   169|
+|108   |  IM00_Reg  |reg__parameterized2         |    32|
+|109   |  IM01_Reg  |reg__parameterized2_0       |    32|
+|110   |  IM02_Reg  |reg__parameterized2_1       |    32|
+|111   |  IM03_Reg  |reg__parameterized2_2       |    64|
+|112   |  IM10_Reg  |reg__parameterized2_3       |    32|
+|113   |  IM11_Reg  |reg__parameterized2_4       |    32|
+|114   |  IM12_Reg  |reg__parameterized2_5       |    32|
+|115   |  IM13_Reg  |reg__parameterized2_6       |    64|
+|116   |  IM20_Reg  |reg__parameterized2_7       |    32|
+|117   |  IM21_Reg  |reg__parameterized2_8       |    32|
+|118   |  IM22_Reg  |reg__parameterized2_9       |    32|
+|119   |  IM23_Reg  |reg__parameterized2_10      |    64|
+|120   |  IM30_Reg  |reg__parameterized2_11      |    32|
+|121   |  IM31_Reg  |reg__parameterized2_12      |    32|
+|122   |  IM32_Reg  |reg__parameterized2_13      |    32|
+|123   |  IM33_Reg  |reg__parameterized2_14      |   128|
+|124   |  M00_Reg   |\reg                        |    32|
+|125   |  M10_Reg   |reg_15                      |    32|
+|126   |  M11_Reg   |reg_16                      |    32|
+|127   |  M20_Reg   |reg_17                      |    96|
+|128   |  M21_Reg   |reg_18                      |    32|
+|129   |  M22_Reg   |reg_19                      |    32|
+|130   |  M30_Reg   |reg_20                      |    32|
+|131   |  M31_Reg   |reg_21                      |    32|
+|132   |  M32_Reg   |reg_22                      |    32|
+|133   |  M33_Reg   |reg_23                      |    32|
+|134   |  M41_Reg   |reg_24                      |    96|
+|135   |  M42_Reg   |reg_25                      |    32|
+|136   |  M43_Reg   |reg_26                      |    32|
+|137   |  M52_Reg   |reg_27                      |    96|
+|138   |  M53_Reg   |reg_28                      |    32|
+|139   |  M63_Reg   |reg_29                      |    96|
++------+------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 894.141 ; gain = 579.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 55 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 894.141 ; gain = 207.078
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 894.141 ; gain = 579.980
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1082 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 894.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1081 instances were transformed.
+  LD => LDCE: 1081 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+317 Infos, 90 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 894.141 ; gain = 589.988
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 894.141 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado_Projects/MSGR/MSGR.runs/synth_1/Overall_MSGR.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Overall_MSGR_utilization_synth.rpt -pb Overall_MSGR_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 21:21:53 2019...

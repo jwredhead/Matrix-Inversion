@@ -1,0 +1,383 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Apr 18 21:28:12 2019
+| Host         : Isengard running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Overall_MSGR_control_sets_placed.rpt
+| Design       : Overall_MSGR
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   313 |
+| Unused register locations in slices containing registers |   414 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            4 |
+|      3 |            2 |
+|      4 |            4 |
+|      7 |           37 |
+|      8 |           64 |
+|     10 |            1 |
+|    16+ |          201 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1302 |          993 |
+| No           | No                    | Yes                    |              83 |           52 |
+| No           | Yes                   | No                     |            3060 |         1110 |
+| Yes          | No                    | No                     |            4180 |         2780 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             697 |          364 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+-----------------------------------+--------------------------------------------------------------------------------+------------------+----------------+
+|          Clock Signal          |           Enable Signal           |                                Set/Reset Signal                                | Slice Load Count | Bel Load Count |
++--------------------------------+-----------------------------------+--------------------------------------------------------------------------------+------------------+----------------+
+|  reset_reg_i_2_n_4             |                                   |                                                                                |                1 |              1 |
+|  calc_count_en_reg_i_1_n_4     |                                   |                                                                                |                1 |              1 |
+|  sndin_count_en_reg_i_1_n_4    |                                   |                                                                                |                1 |              1 |
+|  tkout_count_en_reg_i_2_n_4    |                                   |                                                                                |                1 |              1 |
+|  clk_IBUF_BUFG                 | CE                                | SNDIN_COUNTER/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0          |                1 |              3 |
+|  clk_IBUF_BUFG                 | tkout_count_en                    | TKOUT_COUNTER/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0          |                1 |              3 |
+|  clk_IBUF_BUFG                 | CALC_IAM/count_en                 | CALC_IAM/CTRL_COUNTER/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0  |                1 |              4 |
+|  clk_IBUF_BUFG                 | tkout_count_en_reg_i_2_n_4        | inv_matrix_reg_en[15]_i_1_n_4                                                  |                1 |              4 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/CTRL_COUNTER_i_1__0_n_4 | CALC_MSGR/CTRL_COUNTER/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                1 |              4 |
+|  clk_IBUF_BUFG                 | calc_count_en                     | CALC_COUNTER/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0           |                1 |              4 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                2 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                2 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I2/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]         |                2 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I4/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]         |                2 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                4 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X1reg/Q_reg[32]_2                                                    |                5 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I1/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]         |                4 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I5/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]         |                4 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                3 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                3 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                4 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I3/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]         |                3 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X3reg/Q_reg[32]_2                                                    |                3 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X3reg/SR[0]                                                          |                4 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X4reg/Q_reg[32]_2                                                    |                6 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X4reg/SR[0]                                                          |                2 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X5reg/Q_reg[32]_2                                                    |                4 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X2reg/SR[0]                                                          |                2 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X5reg/SR[0]                                                          |                4 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X6reg/Q_reg[32]_2                                                    |                6 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X6reg/SR[0]                                                          |                3 |              7 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/B1/reg_en_reg_n_4       |                                                                                |                3 |              7 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/B4/reg_en_reg_n_4       |                                                                                |                3 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I6/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]         |                2 |              7 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/B2/reg_en_reg_n_4       |                                                                                |                5 |              7 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/X2reg/Q_reg[32]_0       | CALC_MSGR/X2reg/FSM_onehot_state_reg[0]                                        |                2 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X2reg/Q_reg[32]_2                                                    |                3 |              7 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/X3reg/Q_reg[32]_0       | CALC_MSGR/X3reg/FSM_onehot_state_reg[0]                                        |                3 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/X1reg/SR[0]                                                          |                3 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                2 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                4 |              7 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/X1reg/Q_reg[32]_0       | CALC_MSGR/X1reg/FSM_onehot_state_reg[0]                                        |                3 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                2 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                3 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                2 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[0]       |                2 |              7 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/B3/reg_en_reg_n_4       |                                                                                |                4 |              7 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B3/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I2/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]            |                3 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                3 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I3/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                       |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I5/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]            |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                4 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I4/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]            |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B4/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B4/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B1/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I2/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                       |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                4 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B1/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I3/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]            |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                4 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                4 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                3 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B4/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]            |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I4/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                       |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B4/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                       |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I5/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                       |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B1/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                       |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B2/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                       |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B2/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                3 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B3/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                       |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B1/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]            |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I6/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                       |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I1/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                       |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                     |                3 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B3/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B2/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]            |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                     |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B2/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                3 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B3/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]            |                3 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                     |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                     |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I6/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]            |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                     |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[0]                     |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I1/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]            |                1 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[0]          |                2 |              8 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I2/reset_reg            |                                                                                |               10 |             10 |
+|  matrix_reg_en_reg[15]_i_1_n_4 |                                   |                                                                                |               12 |             16 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B1/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]            |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B2/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]            |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B3/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]            |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I6/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]            |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I1/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]            |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I2/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]            |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I5/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]            |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B4/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B4/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B1/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B1/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I3/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]            |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I4/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]            |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B4/Mult/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]            |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B2/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B2/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B3/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/B3/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I1/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]         |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I6/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]         |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I4/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]         |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I5/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]         |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I2/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]         |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I3/Add/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]         |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Add1/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Add2/U0/i_synth/ADDSUB_OP.ADDSUB/LOW_LAT.OP/EXP/state_op[1]       |                6 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                     |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I2/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                       |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I3/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                       |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I4/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                       |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B4/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                       |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I5/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                       |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B1/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                       |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B2/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                       |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/B3/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                       |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I6/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                       |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_IAM/I1/Div/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                       |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                     |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                     |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                     |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                     |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/Div1/U0/i_synth/DIV_OP.SPD.OP/EXP/state_op[1]                     |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Mult3/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Mult4/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/Mult5/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Mult1/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/Mult2/U0/i_synth/MULT.OP/EXP/EXP_ADD.C_CHAIN/state_op[1]          |                7 |             22 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/B1/reg_en_reg_n_4       | CALC_MSGR/B1/R_Reg/Q[31]_i_1_n_4                                               |                8 |             25 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/B3/reg_en_reg_n_4       | CALC_MSGR/B3/R_Reg/Q[31]_i_1__1_n_4                                            |               10 |             25 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/B4/reg_en_reg_n_4       | CALC_MSGR/B4/R_Reg/Q[31]_i_1__2_n_4                                            |                9 |             25 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/B2/reg_en_reg_n_4       | CALC_MSGR/B2/R_Reg/Q[31]_i_1__0_n_4                                            |                8 |             25 |
+|  M22_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               25 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[0]         |                                                                                |               24 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[11]        |                                                                                |               24 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[12]        |                                                                                |               25 |             32 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I5/Wreg_en__0           |                                                                                |               24 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/I6/state                 |                                                                                |                8 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/I5/state                 |                                                                                |                7 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/I1/state                 |                                                                                |                7 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/I2/state                 |                                                                                |                9 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/I3/state                 |                                                                                |                8 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/I4/state                 |                                                                                |                8 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/In1reg/Q[32]             |                                                                                |               13 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X1reg/Q[32]              |                                                                                |               13 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X3reg/Q[32]              |                                                                                |               11 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[13]        |                                                                                |               25 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/reg_en             | CALC_IAM/In2reg/Q_reg[32]_0                                                    |               14 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/reg_en             | CALC_IAM/In3reg/Q_reg[32]_0                                                    |               15 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/reg_en             | CALC_IAM/In4reg/Q_reg[32]_0                                                    |               20 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/reg_en             | CALC_IAM/X1reg/Q_reg[32]_0                                                     |               12 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/reg_en             | CALC_IAM/X2reg/Q_reg[32]_0                                                     |               15 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/reg_en             | CALC_IAM/X3reg/Q_reg[32]_0                                                     |               12 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/reg_en             | CALC_IAM/X4reg/Q_reg[32]_0                                                     |               23 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/reg_en             | CALC_IAM/X5reg/Q_reg[32]_0                                                     |               23 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/reg_en             | CALC_IAM/X6reg/Q_reg[32]_0                                                     |               21 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/reg_en             | CALC_IAM/In1reg/Q_reg[32]_0                                                    |               16 |             32 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/Q[32]              |                                                                                |               15 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[14]        |                                                                                |               26 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[10]        |                                                                                |               27 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[15]        |                                                                                |               25 |             32 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I6/Wreg_en__0           |                                                                                |               25 |             32 |
+|  clk_IBUF_BUFG                 | inv_matrix_reg_en_reg_n_4_[15]    |                                                                                |               29 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[7]         |                                                                                |               26 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[8]         |                                                                                |               23 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[6]         |                                                                                |               23 |             32 |
+|  M42_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               26 |             32 |
+|  clk_IBUF_BUFG                 | inv_matrix_reg_en_reg_n_4_[0]     |                                                                                |               30 |             32 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I1/Wreg_en__0           |                                                                                |               17 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[9]         |                                                                                |               22 |             32 |
+|  M53_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               24 |             32 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I2/Wreg_en__0           |                                                                                |               27 |             32 |
+|  clk_IBUF_BUFG                 | IM33_reg_in                       |                                                                                |               26 |             32 |
+|  M33_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               25 |             32 |
+|  M32_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               21 |             32 |
+|  M63_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               24 |             32 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I3/Wreg_en__0           |                                                                                |               26 |             32 |
+|  n_3_1948_BUFG                 |                                   |                                                                                |               23 |             32 |
+|  n_1_2048_BUFG                 |                                   |                                                                                |               23 |             32 |
+|  n_2_2047_BUFG                 |                                   |                                                                                |               24 |             32 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I4/Wreg_en__0           |                                                                                |               20 |             32 |
+|  M11_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               22 |             32 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/X2reg/Q_reg[32]_0       |                                                                                |               12 |             32 |
+|  M30_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               24 |             32 |
+|  M21_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               23 |             32 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/X1reg/Q_reg[32]_0       |                                                                                |               11 |             32 |
+|  M43_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               25 |             32 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/X3reg/Q_reg[32]_0       |                                                                                |               13 |             32 |
+|  M52_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               23 |             32 |
+|  M31_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               21 |             32 |
+|  clk_IBUF_BUFG                 | E                                 |                                                                                |               25 |             32 |
+|  clk_IBUF_BUFG                 | IM00_reg_in                       |                                                                                |               32 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[2]         |                                                                                |               23 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[3]         |                                                                                |               25 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[4]         |                                                                                |               22 |             32 |
+|  clk_IBUF_BUFG                 | matrix_reg_en_reg_n_4_[5]         |                                                                                |               25 |             32 |
+|  M41_reg_in_reg[31]_i_1_n_4    |                                   |                                                                                |               27 |             32 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I6/Mult1_In1            |                                                                                |               25 |             33 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I5/Mult1_In1            |                                                                                |               22 |             33 |
+|  n_0_2049_BUFG                 |                                   |                                                                                |               19 |             33 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I1/Mult1_In1            |                                                                                |               22 |             33 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I2/Mult1_In1            |                                                                                |               23 |             33 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I3/Mult1_In1            |                                                                                |               25 |             33 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I4/Mult1_In1            |                                                                                |               25 |             33 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I5/Mult1_In1            | CALC_MSGR/X5reg/Mult2_In1                                                      |               25 |             39 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I4/Mult1_In1            | CALC_MSGR/X4reg/SS[0]                                                          |               24 |             39 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I1/Mult1_In1            | CALC_MSGR/X1reg/SS[0]                                                          |               21 |             39 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I6/Mult1_In1            | CALC_MSGR/X6reg/SS[0]                                                          |               22 |             39 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I2/Mult1_In1            | CALC_MSGR/X2reg/Mult2_In1                                                      |               26 |             39 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I3/Mult1_In1            | CALC_MSGR/X3reg/Mult2_In1                                                      |               26 |             39 |
+|  clk_IBUF_BUFG                 | inv_matrix_reg_en_reg_n_4_[11]    |                                                                                |               55 |             64 |
+|  I4/go[7]                      |                                   |                                                                                |               42 |             64 |
+|  clk_IBUF_BUFG                 | IM01_reg_in                       |                                                                                |               49 |             64 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/X4reg/E[0]              |                                                                                |               21 |             64 |
+|  clk_IBUF_BUFG                 | IM23_reg_in                       |                                                                                |               52 |             64 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/X5reg/E[0]              |                                                                                |               20 |             64 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/X6reg/E[0]              |                                                                                |               20 |             64 |
+|  I6/go[7]                      |                                   |                                                                                |               53 |             64 |
+|  I2/go[7]                      |                                   |                                                                                |               51 |             64 |
+|  I3/go[7]                      |                                   |                                                                                |               53 |             64 |
+|  I5/go[7]                      |                                   |                                                                                |               53 |             64 |
+|  I1/go[7]                      |                                   |                                                                                |               41 |             64 |
+|  clk_IBUF_BUFG                 | inv_matrix_reg_en_reg_n_4_[4]     |                                                                                |               53 |             64 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I5/Zreg_en              |                                                                                |               52 |             71 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I6/Zreg_en              |                                                                                |               49 |             71 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I2/Zreg_en              |                                                                                |               56 |             71 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I4/Zreg_en              |                                                                                |               55 |             71 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I3/Zreg_en              |                                                                                |               47 |             71 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/I1/Zreg_en              |                                                                                |               45 |             71 |
+|  clk_IBUF_BUFG                 |                                   | reset                                                                          |               52 |             83 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I4/FSM_onehot_state_reg[0]_0[0]                                      |               51 |             89 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I3/FSM_onehot_state_reg[0]_0[0]                                      |               61 |             89 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I2/FSM_onehot_state_reg[0]_0[0]                                      |               66 |             89 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I1/FSM_onehot_state_reg[0]_0[0]                                      |               50 |             89 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I5/FSM_onehot_state_reg[0]_0[0]                                      |               53 |             89 |
+|  clk_IBUF_BUFG                 |                                   | CALC_MSGR/I6/FSM_onehot_state_reg[0]_0[0]                                      |               56 |             89 |
+|  clk_IBUF_BUFG                 | inv_matrix_reg_en_reg_n_4_[5]     |                                                                                |               76 |             96 |
+|  clk_IBUF_BUFG                 | IM02_reg_in                       |                                                                                |               76 |             96 |
+|  clk_IBUF_BUFG                 | IM13_reg_in                       |                                                                                |               72 |             96 |
+|  clk_IBUF_BUFG                 | inv_matrix_reg_en_reg_n_4_[7]     |                                                                                |               74 |             96 |
+|  clk_IBUF_BUFG                 | IM03_reg_in                       |                                                                                |               93 |            128 |
+|  clk_IBUF_BUFG                 | inv_matrix_reg_en_reg_n_4_[6]     |                                                                                |               92 |            128 |
+|  sndin_count_en_BUFG           |                                   |                                                                                |               98 |            132 |
+|  clk_IBUF_BUFG                 |                                   |                                                                                |              187 |            225 |
+|  clk_IBUF_BUFG                 | CALC_IAM/X6reg/reg_en             |                                                                                |              215 |            330 |
+|  clk_IBUF_BUFG                 | CALC_MSGR/In4reg/E[0]             |                                                                                |              560 |            852 |
++--------------------------------+-----------------------------------+--------------------------------------------------------------------------------+------------------+----------------+
+
+

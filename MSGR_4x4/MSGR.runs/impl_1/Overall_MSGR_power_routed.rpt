@@ -1,0 +1,379 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date             : Thu Apr 18 21:30:28 2019
+| Host             : Isengard running 64-bit major release  (build 9200)
+| Command          : report_power -file Overall_MSGR_power_routed.rpt -pb Overall_MSGR_power_summary_routed.pb -rpx Overall_MSGR_power_routed.rpx
+| Design           : Overall_MSGR
+| Device           : xc7z020clg400-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-----------------------------------+
+| Total On-Chip Power (W)  | 816.340 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                      |
+| Power Budget Margin (W)  | NA                                |
+| Dynamic (W)              | 815.301                           |
+| Device Static (W)        | 1.039                             |
+| Effective TJA (C/W)      | 11.5                              |
+| Max Ambient (C)          | 0.0                               |
+| Junction Temperature (C) | 125.0                             |
+| Confidence Level         | Low                               |
+| Setting File             | ---                               |
+| Simulation Activity File | ---                               |
+| Design Nets Matched      | NA                                |
++--------------------------+-----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic             |   400.448 |    95068 |       --- |             --- |
+|   LUT as Logic          |   346.297 |    47231 |     53200 |           88.78 |
+|   CARRY4                |    51.298 |    10048 |     13300 |           75.55 |
+|   Register              |     2.720 |     9322 |    106400 |            8.76 |
+|   F7/F8 Muxes           |     0.078 |       73 |     53200 |            0.14 |
+|   BUFG                  |     0.053 |       12 |        32 |           37.50 |
+|   LUT as Shift Register |     0.002 |        4 |     17400 |            0.02 |
+|   Others                |     0.000 |    13114 |       --- |             --- |
+| Signals                 |   408.839 |    68217 |       --- |             --- |
+| I/O                     |     6.014 |       68 |       125 |           54.40 |
+| Static Power            |     1.039 |          |           |                 |
+| Total                   |   816.340 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |   809.721 |     809.423 |      0.299 |
+| Vccaux    |       1.800 |     0.581 |       0.481 |      0.100 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     2.785 |       2.784 |      0.001 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.026 |       0.000 |      0.026 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.473 |       0.000 |      0.473 |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++------------------+-----------+
+| Name             | Power (W) |
++------------------+-----------+
+| Overall_MSGR     |   815.301 |
+|   CALC_COUNTER   |     0.038 |
+|     U0           |     0.038 |
+|       i_synth    |     0.038 |
+|   CALC_IAM       |   292.421 |
+|     B1           |    22.198 |
+|       Div        |    13.990 |
+|       Mult       |     8.050 |
+|       R_reg      |     0.158 |
+|     B2           |    20.955 |
+|       Div        |    13.912 |
+|       Mult       |     7.007 |
+|       R_reg      |     0.036 |
+|     B3           |    20.320 |
+|       Div        |    13.376 |
+|       Mult       |     6.914 |
+|       R_reg      |     0.031 |
+|     B4           |    20.959 |
+|       Div        |    13.747 |
+|       Mult       |     7.138 |
+|       R_reg      |     0.074 |
+|     CTRL_COUNTER |     0.054 |
+|       U0         |     0.054 |
+|     I1           |    33.752 |
+|       Add        |     9.615 |
+|       Div        |    14.961 |
+|       Mult       |     8.796 |
+|       R_reg      |     0.213 |
+|     I2           |    32.956 |
+|       Add        |     9.218 |
+|       Div        |    14.492 |
+|       Mult       |     8.844 |
+|       R_reg      |     0.230 |
+|     I3           |    31.913 |
+|       Add        |     8.999 |
+|       Div        |    14.226 |
+|       Mult       |     8.325 |
+|       R_reg      |     0.206 |
+|     I4           |    34.687 |
+|       Add        |     9.887 |
+|       Div        |    15.089 |
+|       Mult       |     9.334 |
+|       R_reg      |     0.229 |
+|     I5           |    34.336 |
+|       Add        |     9.926 |
+|       Div        |    14.884 |
+|       Mult       |     9.134 |
+|       R_reg      |     0.223 |
+|     I6           |    33.318 |
+|       Add        |     9.184 |
+|       Div        |    15.103 |
+|       Mult       |     8.655 |
+|       R_reg      |     0.206 |
+|     In1reg       |     0.442 |
+|     In2reg       |     0.420 |
+|     In3reg       |     0.448 |
+|     In4reg       |     0.507 |
+|     Out1reg      |     0.114 |
+|     Out2reg      |     0.110 |
+|     Out3reg      |     0.106 |
+|     Out4reg      |     0.109 |
+|     X1reg        |     0.386 |
+|     X2reg        |     0.416 |
+|     X3reg        |     0.365 |
+|     X4reg        |     0.459 |
+|     X5reg        |     0.435 |
+|     X6reg        |     1.144 |
+|     Y1reg        |     0.272 |
+|     Y2reg        |     0.234 |
+|     Y3reg        |     0.225 |
+|     Y4reg        |     0.241 |
+|     Y5reg        |     0.268 |
+|     Y6reg        |     0.216 |
+|   CALC_MSGR      |   504.340 |
+|     B1           |     4.344 |
+|       Mult1      |     3.002 |
+|       Mult2      |     1.249 |
+|       R_Reg      |     0.016 |
+|     B2           |    17.537 |
+|       Mult1      |     8.096 |
+|       Mult2      |     9.359 |
+|       R_Reg      |     0.042 |
+|     B3           |    18.184 |
+|       Mult1      |     8.179 |
+|       Mult2      |     9.926 |
+|       R_Reg      |     0.044 |
+|     B4           |    17.762 |
+|       Mult1      |     8.013 |
+|       Mult2      |     9.665 |
+|       R_Reg      |     0.051 |
+|     CTRL_COUNTER |     0.031 |
+|       U0         |     0.031 |
+|     I1           |    66.817 |
+|       Add1       |    11.854 |
+|       Add2       |    10.588 |
+|       C_Reg      |     0.245 |
+|       Div1       |    15.099 |
+|       Mult1      |     5.720 |
+|       Mult2      |     2.859 |
+|       Mult3      |     6.891 |
+|       Mult4      |     4.871 |
+|       Mult5      |     7.016 |
+|       S_Reg      |     0.035 |
+|       W_Reg      |     0.075 |
+|       Z_Reg      |     0.017 |
+|     I1Wreg       |     0.018 |
+|     I1Yreg       |     0.501 |
+|     I2           |    66.512 |
+|       Add1       |    11.693 |
+|       Add2       |    10.005 |
+|       C_Reg      |     0.261 |
+|       Div1       |    14.985 |
+|       Mult1      |     5.636 |
+|       Mult2      |     2.973 |
+|       Mult3      |     6.749 |
+|       Mult4      |     4.840 |
+|       Mult5      |     7.605 |
+|       S_Reg      |     0.036 |
+|       W_Reg      |     0.066 |
+|       Z_Reg      |     0.012 |
+|     I2Wreg       |     0.056 |
+|     I2Yreg       |     0.194 |
+|     I3           |    61.773 |
+|       Add1       |    11.041 |
+|       Add2       |     9.587 |
+|       C_Reg      |     0.227 |
+|       Div1       |    14.903 |
+|       Mult1      |     4.272 |
+|       Mult2      |     2.961 |
+|       Mult3      |     6.058 |
+|       Mult4      |     4.349 |
+|       Mult5      |     6.782 |
+|       S_Reg      |     0.035 |
+|       W_Reg      |     0.101 |
+|       Z_Reg      |     0.013 |
+|     I3Wreg       |     0.054 |
+|     I3Yreg       |     0.204 |
+|     I4           |    81.857 |
+|       Add1       |    11.568 |
+|       Add2       |    10.879 |
+|       C_Reg      |     0.144 |
+|       Div1       |    15.085 |
+|       Mult1      |     6.761 |
+|       Mult2      |     2.845 |
+|       Mult3      |    16.888 |
+|       Mult4      |     9.395 |
+|       Mult5      |     6.520 |
+|       S_Reg      |     0.033 |
+|       W_Reg      |     0.060 |
+|       Z_Reg      |     0.014 |
+|     I4Wreg       |     0.014 |
+|     I4Yreg       |     0.484 |
+|     I5           |    81.755 |
+|       Add1       |    12.199 |
+|       Add2       |    11.222 |
+|       C_Reg      |     0.161 |
+|       Div1       |    14.733 |
+|       Mult1      |     6.565 |
+|       Mult2      |     2.866 |
+|       Mult3      |    16.191 |
+|       Mult4      |     9.650 |
+|       Mult5      |     6.430 |
+|       S_Reg      |     0.033 |
+|       W_Reg      |     0.045 |
+|       Z_Reg      |     0.013 |
+|     I5Wreg       |     0.032 |
+|     I5Yreg       |     0.190 |
+|     I6           |    82.646 |
+|       Add1       |    11.124 |
+|       Add2       |    10.947 |
+|       C_Reg      |     0.153 |
+|       Div1       |    15.323 |
+|       Mult1      |     7.139 |
+|       Mult2      |     2.987 |
+|       Mult3      |    16.834 |
+|       Mult4      |    10.202 |
+|       Mult5      |     6.184 |
+|       S_Reg      |     0.036 |
+|       W_Reg      |     0.037 |
+|       Z_Reg      |     0.012 |
+|     I6Wreg       |     0.010 |
+|     I6Yreg       |     0.434 |
+|     In1reg       |     0.145 |
+|     In2reg       |     0.068 |
+|     In3reg       |     0.084 |
+|     In4reg       |     0.506 |
+|     Out1reg      |     0.029 |
+|     Out2reg      |     0.008 |
+|     Out3reg      |     0.009 |
+|     Out4reg      |     0.009 |
+|     X1reg        |     0.326 |
+|     X2reg        |     0.319 |
+|     X3reg        |     0.352 |
+|     X4reg        |     0.319 |
+|     X5reg        |     0.332 |
+|     X6reg        |     0.316 |
+|   IM00_Reg       |     0.058 |
+|   IM01_Reg       |     0.058 |
+|   IM02_Reg       |     0.053 |
+|   IM03_Reg       |     0.545 |
+|   IM10_Reg       |     0.050 |
+|   IM11_Reg       |     0.060 |
+|   IM12_Reg       |     0.004 |
+|   IM13_Reg       |     0.456 |
+|   IM20_Reg       |     0.046 |
+|   IM21_Reg       |     0.005 |
+|   IM22_Reg       |     0.005 |
+|   IM23_Reg       |     0.501 |
+|   IM30_Reg       |     0.004 |
+|   IM31_Reg       |     0.004 |
+|   IM33_Reg       |     1.240 |
+|   M00_Reg        |     0.001 |
+|   M10_Reg        |     0.001 |
+|   M11_Reg        |     0.001 |
+|   M20_Reg        |     0.625 |
+|   M21_Reg        |     0.001 |
+|   M30_Reg        |     0.001 |
+|   M31_Reg        |     0.001 |
+|   M41_Reg        |     0.482 |
+|   M52_Reg        |     0.600 |
+|   M63_Reg        |     0.637 |
+|   SNDIN_COUNTER  |     0.017 |
+|     U0           |     0.017 |
+|       i_synth    |     0.017 |
+|   TKOUT_COUNTER  |     0.036 |
+|     U0           |     0.036 |
+|       i_synth    |     0.036 |
++------------------+-----------+
+
+

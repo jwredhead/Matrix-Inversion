@@ -1,0 +1,1 @@
+-wto "f750eb8f4cf544fc84bde17c0e5e979b" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "internal_cell_TB_func_synth" "xil_defaultlib.internal_cell_TB" -log "elaborate.log" 

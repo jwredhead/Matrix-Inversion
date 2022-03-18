@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MSGR.srcs/sources_1/ip/FP_MULT/sim/FP_MULT.vhd" \
+"../../../../MSGR.srcs/sources_1/new/boundary_cell.vhd" \
+"../../../../MSGR.srcs/sources_1/new/reg.vhd" \
+"../../../../MSGR.srcs/sim_1/new/boundary_cell_TB.vhd" \
+
+# Do not sort compile order
+nosort

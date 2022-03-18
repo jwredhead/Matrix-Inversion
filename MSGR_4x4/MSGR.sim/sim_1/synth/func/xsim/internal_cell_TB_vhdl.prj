@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"internal_cell_TB_func_synth.vhd" \
+"../../../../../MSGR.srcs/sim_1/new/internal_cell_TB.vhd" \
+
+# Do not sort compile order
+nosort
